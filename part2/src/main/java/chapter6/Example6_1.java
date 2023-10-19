@@ -9,7 +9,7 @@ import reactor.core.publisher.Mono;
  */
 public class Example6_1 {
     public static void main(String[] args) {
-        Mono.just("Hello Reactor")
+        Mono.just("Hello Reactor") // Mono는 0 또는 1개의 데이터를 emit 하는 Publisher -> RxJava 에서는 Maybe + Single 이라 생각하면 됨.
                 .subscribe(System.out::println);
     }
 }
